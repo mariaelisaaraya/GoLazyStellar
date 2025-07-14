@@ -1,12 +1,12 @@
-# 🏆 GoLazy — Community Rewards with XLM
+# 🏆 GoLazy — Community Rewards with USDC
 
-> Soroban smart contract to launch challenges, add participants, and distribute XLM rewards without intermediaries.
+> Soroban smart contract to launch challenges, add participants, and distribute USDC rewards without intermediaries.
 
 ---
 
 ## 📍 Description
 
-**GoLazy** allows any individual or community to create public challenges, invite participants, and automatically distribute rewards in XLM. It's designed for use by social impact projects, cooperatives, NGOs, or collectives seeking open, decentralized, and auditable tools.
+**GoLazy** allows any individual or community to create public challenges, invite participants, and automatically distribute rewards in USDC. It's designed for use by social impact projects, cooperatives, NGOs, or collectives seeking open, decentralized, and auditable tools.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ### ✅ Track 3 — Code for a Cause
 
-- The contract **transparently and traceably** manages the distribution of XLM to winners.
+- The contract **transparently and traceably** manages the distribution of USDC to winners.
 - Ideal for NGOs, cooperatives, and social movements seeking decentralized mechanisms to distribute funds, reward achievements, or activate collective participation.
 
 ---
@@ -63,7 +63,7 @@ mark_winner(env, challenge_id, winner_address)
 finalize_challenge(env, challenge_id)
 ```
 
-Returns remaining XLM to the creator and marks the challenge as inactive.
+Returns remaining USDC to the creator and marks the challenge as inactive.
 
 ### 📊 Visualization
 
