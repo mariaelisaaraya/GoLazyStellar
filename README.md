@@ -1,4 +1,4 @@
-"# 🏆 GoLazy — Community Rewards with XLM
+# 🏆 GoLazy — Community Rewards with XLM
 
 > Soroban smart contract to launch challenges, add participants, and distribute XLM rewards without intermediaries.
 
@@ -79,7 +79,7 @@ Consult information from the frontend or directly in Soroban CLI.
 
 📡 Deployed Contract
 
-🪪 Contract ID: CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S
+🪪 Contract ID: **CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S**
 
 🔗 View on Stellar Expert [Testnet](https://stellar.expert/explorer/testnet/contract/CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S)
 
