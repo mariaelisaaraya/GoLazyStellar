@@ -1,41 +1,41 @@
-# 🏆 GoLazy — Recompensas Comunitarias con XLM
+"# 🏆 GoLazy — Community Rewards with XLM
 
-> Contrato inteligente Soroban para lanzar desafíos, sumar participantes y distribuir recompensas en XLM sin intermediarios.
-
----
-
-## 📍 Descripción
-
-**GoLazy** permite a cualquier persona o comunidad crear retos públicos, invitar participantes y distribuir recompensas automáticamente en XLM. Está diseñado para ser usado por proyectos de impacto social, cooperativas, ONGs o colectivos que buscan herramientas abiertas, descentralizadas y auditables.
+> Soroban smart contract to launch challenges, add participants, and distribute XLM rewards without intermediaries.
 
 ---
 
-## 🎯 Objetivos
+## 📍 Description
 
-- Eliminar barreras de participación en iniciativas comunitarias.
-- Automatizar la entrega de incentivos y microrecompensas.
-- Transparentar la distribución de fondos sin intervención humana.
-- Fomentar la autonomía y la auto-organización.
+**GoLazy** allows any individual or community to create public challenges, invite participants, and automatically distribute rewards in XLM. It's designed for use by social impact projects, cooperatives, NGOs, or collectives seeking open, decentralized, and auditable tools.
 
 ---
 
-## 💡 ¿En qué tracks participa?
+## 🎯 Objectives
 
-### ✅ Track 2 — Identidad sin barreras
-
-- GoLazy permite que cualquier dirección en Stellar pueda participar de un reto sin documentación formal o verificación externa.
-- Aplicable a comunidades sin acceso a servicios financieros tradicionales, fomentando la inclusión digital.
-
-### ✅ Track 3 — Código para la causa
-
-- El contrato gestiona de forma **transparente y trazable** la distribución de XLM a ganadores.
-- Ideal para ONGs, cooperativas y movimientos sociales que buscan mecanismos descentralizados para distribuir fondos, recompensar logros o activar participación colectiva.
+- Eliminate participation barriers in community initiatives.
+- Automate the delivery of incentives and micro-rewards.
+- Ensure transparent distribution of funds without human intervention.
+- Foster autonomy and self-organization.
 
 ---
 
-## ⚙️ Funciones del Contrato
+## 💡 Which Tracks Does It Participate In?
 
-### 🚀 Crear Challenge
+### ✅ Track 2 — Identity Without Barriers
+
+- GoLazy allows any Stellar address to participate in a challenge without formal documentation or external verification.
+- Applicable to communities without access to traditional financial services, promoting digital inclusion.
+
+### ✅ Track 3 — Code for a Cause
+
+- The contract **transparently and traceably** manages the distribution of XLM to winners.
+- Ideal for NGOs, cooperatives, and social movements seeking decentralized mechanisms to distribute funds, reward achievements, or activate collective participation.
+
+---
+
+## ⚙️ Contract Functions
+
+### 🚀 Create Challenge
 
 ```rust
 create_challenge(env, creator, title, description, reward_amount, deadline)
@@ -49,23 +49,23 @@ El creador define un reto. Se transfiere el monto al contrato.
 join_challenge(env, participant, challenge_id)
 ```
 
-Cualquier cuenta puede sumarse antes del deadline.
+Any account can join before the deadline.
 
-### 🏆 Marcar Ganadores
+### 🏆 Mark Winners
 
 ```rust
 mark_winner(env, challenge_id, winner_address)
 ```
 
-### ✅ Finalizar Challenge
+### ✅ Finalize Challenge
 
 ```rust
 finalize_challenge(env, challenge_id)
 ```
 
-Devuelve XLM sobrante al creador y marca el reto como inactivo.
+Returns remaining XLM to the creator and marks the challenge as inactive.
 
-### 📊 Visualización
+### 📊 Visualization
 
 ```rust
 get_challenge(env, challenge_id)
@@ -73,15 +73,15 @@ get_active_challenges(env)
 get_challenge_count(env)
 ```
 
-Consultar información desde el frontend o directamente en Soroban CLI.
+Consult information from the frontend or directly in Soroban CLI.
 
 ---
 
-📡 Contrato Desplegado
+📡 Deployed Contract
 
-🪪 ID del contrato: CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S
+🪪 Contract ID: CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S
 
-🔗 Ver en Stellar Expert [Testnet](https://stellar.expert/explorer/testnet/contract/CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S)
+🔗 View on Stellar Expert [Testnet](https://stellar.expert/explorer/testnet/contract/CAACAZ44HLI4467QQ5MNAY2AR6COXSLLEPYFSDEYMP7FLZSKK4CGLB5S)
 
 
 
