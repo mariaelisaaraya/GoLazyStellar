@@ -1,21 +1,44 @@
-# Soroban Project
+# 🏆 GoLazy — Reta, Participa y Gana con Stellar
 
-## Project Structure
+> dApp en Soroban para crear y gestionar desafíos con recompensas automáticas en XLM.
 
-This repository uses the recommended structure for a Soroban project:
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+---
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## 📌 Descripción General
+
+**GoLazy** es una aplicación basada en Soroban que permite crear desafíos comunitarios con recompensas económicas usando **XLM**.  
+Su objetivo es fomentar la participación colectiva, la transparencia y la inclusión financiera mediante incentivos programados y distribución automática de fondos.
+
+---
+
+## 💡 Problema que Resuelve
+
+Organizar retos o convocatorias con premios suele ser complejo, poco transparente o centralizado.  
+**GoLazy** transforma ese proceso en algo simple, confiable y sin intermediarios:
+
+- Proyectos comunitarios.
+- Desafíos educativos.
+- Incentivos por objetivos cumplidos.
+- Participación abierta en dinámicas colaborativas.
+
+La recompensa en XLM se mantiene en **escrow** hasta que se definen los ganadores, lo que garantiza seguridad y confianza para todos los participantes.
+
+---
+
+## ✨ Funcionalidades Principales
+
+- 🛠️ Crear desafíos con título, descripción, recompensa y fecha límite.
+- 🧑‍🤝‍🧑 Participación abierta con verificación automática de elegibilidad.
+- 🏅 Distribución automática de XLM entre los ganadores seleccionados.
+- 🔒 Escrow nativo: fondos depositados se liberan sólo al final.
+- 🔁 Devolución del sobrante al creador si quedan XLM sin repartir.
+- 📦 Código 100% open source y documentado.
+
+
+GoLazy utiliza el **stack de Stellar** de forma nativa:
+
+- ✅ **Soroban** (contrato inteligente en Rust)
+- ✅ **XLM como token nativo**
+- ✅ **Gestión de identidades con `require_auth()`**
+- ✅ **Transferencias automáticas vía `token::Client`**
+
